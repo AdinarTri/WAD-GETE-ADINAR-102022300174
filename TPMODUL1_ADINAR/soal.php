@@ -27,9 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // silakan taruh kode kalian di bawah
     $nim = $_POST["nim"];
     if (empty($nim)) {
-        $nimErr = "NIM Telepon wajib diisi";
+        $nimErr = "NIM wajib diisi";
     } elseif (!ctype_digit($nim)) {
-        $nimErr = "NIM Telepon harus berupa angka";
+        $nimErr = "NIM harus berupa angka";
     }
 }    
 ?>
